@@ -1,0 +1,88 @@
+---
+title: "The NHSR Community Toolshed"
+title-slide-attributes: 
+  data-background-color: "#43464B"
+subtitle: "Session - Break"
+author: "Zoë Turner"
+format:
+  revealjs:
+    theme: [default, nhsr-quarto.scss]
+    logo: https://raw.githubusercontent.com/nhs-r-community/assets/main/logo/nhsr-logo.svg
+    code-link: true
+    css: nhsr-quarto.scss
+    preview-links: true
+embed-resources: true    
+execute: 
+  echo: false
+  eval: true
+---
+
+## Who is NHSR Community?
+
+::: {.incremental}
+- It's always good to introduce yourself
+- Me first!
+- Next the Community: short version is we are not just NHS and not just R
+- Longer version can be found at the [Toolshed](https://github.com/nhs-r-community)
+:::
+
+## What do we have
+
+::: {.incremental}
+- No GitHub site would be complete without a package (or two)
+- Books
+- Training materials
+- a [universe](https://github.com/nhs-r-community/universe)
+:::
+
+## It's all work in progress
+
+Whilst work may be paused is it ever really complete?
+
+<div style="width:100%;height:0;padding-bottom:102%;position:relative;"><iframe src="https://giphy.com/embed/xT9DPOLRwLzOV695cc" width="470" height="480" alt="Sun bobbing along carrying a handkerchief tied to a stick over its shoulder" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/summer-bye-goodbye-xT9DPOLRwLzOV695cc">via GIPHY</a></p>
+
+## Adding tools to the toolshed
+
+The GitHub account includes
+
+::: {.incremental}
+- projects from the [very beginning](https://github.com/nhs-r-community/NHSRplotthedots)
+- recently received transferred projects
+- Some of these are just passed on with [no further input](https://github.com/nhs-r-community/quarto-nhs-theme) - yet
+- Whilst others have continued to have [input from the creator](https://github.com/nhs-r-community/NHSRepisodes)
+:::
+
+## We can practice working as a team
+
+A particular feature of team working is conversation and that can happen via
+
+::: {.incremental}
+- [Issues](https://github.com/nhs-r-community/demos-and-how-tos/issues)
+- [Pull Requests](https://github.com/nhs-r-community/demos-and-how-tos/pulls?q=is%3Apr+is%3Aclosed)
+- [Conversations](https://github.com/nhs-r-community/NHSRepisodes/pull/12) 
+:::
+
+::: {.notes}
+An example of a good first issue resolved by someone https://github.com/nhs-r-community/intro_r/pull/76 possibly not actually in the NHS-R Community but whose contribution was very welcome.
+:::
+
+
+## Everything needs documentation
+
+Even a community!
+
+::: {.incremental}
+- Not everything is obvious to a new person
+- and a lot is not known even to people who have been involved for a while!
+- We can practice sharing using words before code
+- Following [The Turing Way](https://the-turing-way.netlify.app/index.html) we have the [NHS-R way](https://nhs-r-community.github.io/NHSR-way/)
+- Following [The GDS Way](https://gds-way.cloudapps.digital/) we have (currently) a more technical guide [Statement on Tools](https://nhs-r-community.github.io/statements-on-tools/)
+:::
+
+## Just a reminder
+
+We are called NHSR but we are not just the NHS and not just R
+
+We share a common interest in health and care, data science tools and to quote the NHS-R way
+
+> We value the participation of every member of our community and want to ensure that every contributor has an enjoyable and fulfilling experience. 
