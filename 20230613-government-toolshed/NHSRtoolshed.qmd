@@ -2,7 +2,6 @@
 title: "The NHSR Community Toolshed"
 title-slide-attributes: 
   data-background-color: "#43464B"
-subtitle: "Session - Break"
 author: "Zoë Turner"
 format:
   revealjs:
