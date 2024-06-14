@@ -1,0 +1,49 @@
+---
+title: "The NHSR Community Toolshed - Housekeeping"
+title-slide-attributes: 
+  data-background-color: "#43464B"
+author: "Zoë Turner"
+format:
+  revealjs:
+    theme: [default, nhsr-quarto.scss]
+    logo: https://raw.githubusercontent.com/nhs-r-community/assets/main/logo/nhsr-logo.svg
+    code-link: true
+    css: nhsr-quarto.scss
+    preview-links: true
+embed-resources: true    
+execute: 
+  echo: false
+  eval: true
+---
+
+## Housekeeping {.smaller}
+
+The format will be:
+
+- Presentation
+- Discussion/Informal Q&A
+
+We will record this session to an NHS organisation Sharepoint site and share **publicly** through the NHS-R Community YouTube site.
+
+If you do not wish to be recorded please keep your cameras off. 
+
+If you are wish any part of the recording to be removed/blurred please contact us at `nhs.rcommunity@nhs.net` 
+
+We detail how we manage our materials in our book NHS-R Way https://nhsrway.nhsrcommunity.com/community-handbook.html#youtube
+
+
+## DataConnect T&Cs {.smaller}
+
+Please make participants aware of DataConnect’s T&Cs, as listed on Eventbrite, these are:
+
+- By joining each DataConnect23 session you are agreeing to observe the rules,
+policies and procedures of DataConnect. This means behaving in a respectful,
+professional and appropriate manner that does not breach laws regarding diversity,
+race and gender, and you are respectful of the speaker and the material/ project
+being discussed.
+- Please remember to only ask appropriate and polite questions, and to refrain from
+swearing or any kind of aggressive, racist or sexist behaviour.
+- Please note any inappropriate behaviour, will result in participants being muted or
+removed from a session.
+- By attending a DataConnect23 session you are agreeing to be filmed for Civil Service
+learning materials, to be shared on cross-government platforms
