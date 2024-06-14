@@ -1,0 +1,124 @@
+---
+title: "NHSR Community Coffee and Coding - Quarto"
+title-slide-attributes: 
+  data-background-color: "#43464B"
+author: "Zoë Turner"
+format:
+  revealjs:
+    theme: [default, nhsr-quarto.scss]
+    logo: https://raw.githubusercontent.com/nhs-r-community/assets/main/logo/nhsr-logo.svg
+    code-link: true
+    css: nhsr-quarto.scss
+    preview-links: true
+embed-resources: true    
+execute: 
+  echo: true
+  eval: false
+---
+
+## Notebooks
+
+I have a paper notebook with Excel formulae and SQL code from when I first started as an analyst. Code like:
+
+. . .
+
+`YEAR(DateColumn) * 100 + MONTH(DateColumn)`
+
+which gave use the format `202406` in our analysis and
+
+. . .
+
+`SUBSTRING(xxx, CHARINDEX('x', xxx), 4)`
+
+find `x` in column `xxx` and return 4 characters
+
+::: notes
+This book was incredibly useful for helping me "revise" the code but searching through it, like I did for this talk, is almost useless
+:::
+
+## Writing and searching
+
+Fast forward a few years when I was learning R
+
+. . .
+
+I realised I couldn't search for things like I could like SQL
+
+![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnc5ZXZqamg0dnl4eHJlbDAxZWJwaXI1cnNsb3luNmZzMjRkMWtxbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yR4xZagT71AAM/giphy.gif){fig-alt="Girl at a very old computer typing and the screen says GOOGLE and the code returns SYNTAX ERROR" width="724" height="389"}
+
+. . .
+
+because I didn't know what things were called!
+
+## Writing code and text
+
+And whilst I was keeping notes on code there was all the other context and methodology information
+
+![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2c3OHAzOW9scjJ2bzdscGN4bDY5eGJ2MXZzNDI0YTBqbDVzemtxZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XIqCQx02E1U9W/giphy.gif){fig-alt="Kermit the frog frantically typing on a typewriter" width="656"}
+
+. . .
+
+And this was kept on Sharepoint which was restricted access
+
+## DRY
+
+**D**on't **R**epeat **Y**ourself
+
+. . .
+
+well I was doing that all the time
+
+. . .
+
+![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGtsMnI2MDR3MzRkbWNsd3plaXJxZmx2dXBzbnN5Y3cwYzNjMHJyZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4Hb9EJBAkuwtr5oeeb/giphy-downsized-large.gif){fig-alt="Alexis Rose from Schitt's Creek saying 'Ugh, no I'm trying to learn from my mistakes - before making new ones'"}
+
+And making **mistakes**
+
+## Requirements
+
+A solution needed to be:
+
+::: incremental
+-   Shareable
+-   Searchable
+-   Flexible
+-   Combine code and text
+:::
+
+## The solution
+
+I started off with a book
+
+. . .
+
+I ended up with a book
+
+## Actually I ended up with several books
+
+[![NHS-R Community Quarto website book page](img/screenshot-website-books.PNG)](https://nhsrcommunity.nhsrcommunity.com/books/)
+
+::: notes
+This link is in development and so won't repeat nhsrcommunity once published.
+:::
+
+## And there is more
+
+![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW5xZjVkMTNkaTczbmx5M2lodDh5NjF3aGhsN2xhcDBjNmhqZHlkciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nthoYgQ91Up2u7qmcE/giphy.gif){fig-alt="Cartoon of nesting dolls that open up until the smallest and then return back to the largest" width="632"}
+
+## Quarto solutions
+
+Books, presentation slides and blogs lead to websites like this from the [Royal Statistical Society](https://realworlddatascience.net/)
+
+. . .
+
+Which lead to data science solutions like GitHub actions and Docker
+
+## The end...
+
+And many, many mistakes (also known as trial and error!)
+
+![](img/gh-action-shame.PNG){fig-alt="Screenshot of the 25 failed GitHub Action commits I made to trying to get a book to publish using the CNAME redirect to NHSR Community dot com" width="835"}
+
+## Thanks
+
+To Matt Dray for [{quartostamp}](https://github.com/matt-dray/quartostamp) because I always forget what's possible in Quarto and how to write the code!
