@@ -1,0 +1,221 @@
+---
+title: "Introducing the NHSR Community"
+title-slide-attributes: 
+  data-background-color: "#43464B"
+author: "Zoë Turner"
+format:
+  revealjs:
+    theme: [default, nhsr-quarto.scss]
+    code-link: true
+    css: nhsr-quarto.scss
+    preview-links: true
+embed-resources: true
+execute: 
+  echo: false
+  eval: true
+filters:
+  - "webr"
+engine: knitr
+webr:
+  packages: ["NHSRplotthedots", "dplyr", "NHSRdatasets", "data.table", "NHSRpopulation"]
+---
+
+## Who are you? {.scrollable}
+
+Before we start what programs do you usually use?
+
+-   Excel
+-   SQL
+-   PowerBI
+-   Tableau
+-   Qlik
+-   SPSS
+-   STATA
+-   R
+-   Python
+-   Something else...
+
+## Who is NHS-R Community?
+
+::: incremental
+-   Whilst we are called NHS-R we are not just NHS and not just R!
+-   Everyone is welcome!
+-   We started in 2018 with funding R projects, a conference and training Introduction to R and R Studio
+-   We still do training and...
+:::
+
+## ... we have created...
+
+::: incremental
+-   [Postcard](https://postcard.nhsrcommunity.com/) - using R and RMarkdown
+-   [Website](https://nhsrcommunity.com/) - using Quarto
+-   [Books](https://nhsrcommunity.com/books/) - using Quarto
+-   [Training materials](https://nhsrcommunity.com/getting-started.html) of blogs, slides and recordings - using Quarto and YouTube
+-   [GitHub](https://github.com/nhs-r-community) - where we share our code and publish these things **free**
+:::
+
+## Open source
+
+Everything is in the open (including our mistakes as we learn):
+
+![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGtsMnI2MDR3MzRkbWNsd3plaXJxZmx2dXBzbnN5Y3cwYzNjMHJyZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4Hb9EJBAkuwtr5oeeb/giphy-downsized-large.gif){fig-alt="Alexis Rose from Schitt's Creek saying 'Ugh, no I'm trying to learn from my mistakes - before making new ones'" fig-align="center"}
+
+## Everything needs documentation
+
+Even a community!
+
+::: incremental
+-   Not everything is obvious to a new person...
+-   ... and a lot is not known even to people who have been involved for a while!
+-   We can practice sharing using words before code
+-   Following [The Turing Way](https://the-turing-way.netlify.app/index.html) we have the [NHS-R way](https://nhs-r-community.github.io/NHSR-way/)
+-   Following [The GDS Way](https://gds-way.cloudapps.digital/) we have (currently) a more technical guide [Statement on Tools](https://nhs-r-community.github.io/statements-on-tools/)
+:::
+
+## Health Inequalities
+
+It's not just code we share, it's our knowledge on the data we are using:
+
+[Health Inqualities book](https://health-inequalities.nhsrcommunity.com/)
+
+- Contributions to these don't have to be technical or use code
+- The book has two "built in" ways to make comments, using either GitHub or Hypothesis.
+
+## It's all work in progress
+
+::::: columns
+::: {.column width="40%"}
+Whilst work may be paused is it ever really complete?
+
+What is important to us is [contribution, not output](https://github.com/nhs-r-community/nhs-r-community?tab=readme-ov-file#contributors)
+:::
+
+::: {.column width="60%"}
+![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzl4Mno4YXU5Zjdhd2FlZXpldWJnOXR3ODN2ZHRlbHFvZTBpNzV2MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT9DPOLRwLzOV695cc/giphy.gif){fig-alt="Cartoon sun with a smiling face and a stick with a bag tied at the end over its shoulder, saying \"My work here is done\"" fig-align="right"}
+:::
+:::::
+
+## Senario 1
+
+Creating an SPC (Statistical Process Control chart) for hospital admission data
+
+## NHSRdatasets {.scrollable}
+
+This R package has publicly available data to use for training.
+
+Use code to create a "temporary table" called sub_set:
+
+```{webr-r}
+library(NHSRdatasets)
+library(dplyr)
+
+sub_set <- ae_attendances |>
+  filter(org_code == "RQM",  # the hospital code
+         type == 1, # the type of admission
+         period < as.Date("2018-04-01")) # dates before 01/04/2018
+
+sub_set
+```
+
+## NHSRplotthedots {.scrollable}
+
+Using this SPC package which creates plots using the NHSE/I 'Making Data Count' rules and look:
+
+```{webr-r}
+library(NHSRplotthedots)
+
+sub_set |>
+  ptd_spc(
+    value_field = breaches,
+    date_field = period,
+    improvement_direction = "decrease"
+  )
+```
+
+## Scenario 2
+
+Hospital episodes can overlap or have gaps which can result in under or over counting
+
+## Create some data using code {.scrollable}
+
+Using data created in code this time:
+
+```{webr-r}
+#| context: setup
+webr::install("NHSRepisodes", repos = c("https://nhs-r-community.r-universe.dev"))
+```
+
+```{webr-r}
+library(dplyr)
+
+dat <- tribble(
+  ~patient_id, ~admission, ~discharge, ~code, ~notes,
+  1L, "2020-01-01", "2020-01-10", "t100", NA,
+  1L, "2020-01-12", "2020-01-22", "t600", NA,
+  2L, "2020-05-01", "2020-10-01", "t100", NA,
+  2L, "2020-10-01", "2020-11-01", "t250", "same day discharge and admission"
+) |>
+  # columns must be date format to work with NHSRepisodes functions
+  mutate(across(admission:discharge, as.Date)) 
+
+dat
+
+```
+
+## NHSRepisodes {.scrollable}
+
+This package has two functions, one adds the episode number to the data the other reduces the data to just one one line:
+
+```{webr-r}
+
+# Add a column to your data on the episode numbers
+dat |>
+  # Rename the columns so that they are recognised by the `add_parent_interval()` function
+  select(
+    id = patient_id,
+    start = admission,
+    end = discharge,
+    ends_with("number")
+  ) |>
+  NHSRepisodes::add_parent_interval()
+
+```
+
+## Returning just one line
+
+```{webr-r}
+
+# Add a column to your data on the episode numbers
+dat |>
+  # Rename the columns so that they are recognised by the `add_parent_interval()` function
+  select(
+    id = patient_id,
+    start = admission,
+    end = discharge,
+    ends_with("number")
+  ) |>
+  NHSRepisodes::merge_episodes()
+
+```
+
+## A learning environment
+
+NHS-R Community is a learning environment:
+
+::: {.incremental}
+-   we have volunteers who develop and offer training
+-   and we have technical spaces where you can practice
+-   supported by a community in Slack to ask questions and connect with people
+-   and if you make a mistake it will get lost amongst all of ours
+:::
+
+
+## Final reminder
+
+We are not just the NHS and not just R
+
+We share a common interest in health and care, data science tools and to quote the NHS-R way
+
+> We value the participation of every member of our community and want to ensure that every contributor has an enjoyable and fulfilling experience.
+
+## Any questions?
