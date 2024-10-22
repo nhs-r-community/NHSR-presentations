@@ -1,5 +1,14 @@
 project:
   title: "NHSRpresentations"
-
-
-
+  render: 
+    - "*.qmd"
+    - "!*.md"
+embed-resources: true
+format:
+  revealjs:
+    theme: [default, nhsr-quarto.scss]
+    code-link: true
+    css: nhsr-quarto.scss
+    preview-links: true
+title-slide-attributes: 
+  data-background-color: "#43464B"

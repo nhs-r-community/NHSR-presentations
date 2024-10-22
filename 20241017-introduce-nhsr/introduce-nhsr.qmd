@@ -1,18 +1,10 @@
 ---
 title: "Introducing the NHSR Community"
-title-slide-attributes: 
-  data-background-color: "#43464B"
 author: "Zoë Turner"
-format:
-  revealjs:
-    theme: [default, nhsr-quarto.scss]
-    code-link: true
-    css: nhsr-quarto.scss
-    preview-links: true
-embed-resources: true
 execute: 
   echo: false
   eval: true
+embed-resources: true
 filters:
   - "webr"
 engine: knitr
