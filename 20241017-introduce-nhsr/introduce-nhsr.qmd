@@ -5,6 +5,7 @@ execute:
   echo: false
   eval: true
 embed-resources: true
+logo: ""
 filters:
   - "webr"
 engine: knitr

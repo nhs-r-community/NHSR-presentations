@@ -6,9 +6,9 @@ project:
 embed-resources: true
 format:
   revealjs:
-    theme: [default, nhsr-quarto.scss]
+    footer: "<https://postcard.nhsrcommunity.com/>"
     code-link: true
-    css: nhsr-quarto.scss
     preview-links: true
 title-slide-attributes: 
   data-background-color: "#43464B"
+brand: _brand.yml
