@@ -1,0 +1,29 @@
+meta:
+  name:
+    full: NHS-R Community
+  link: 
+    home: https://nhsrcommunity.com/
+    github: https://github.com/nhs-r-community
+  
+color:
+  palette:
+    nhs-black: "#231f20"
+    white: "#FFFFFF"
+    nhs-blue: "#005EB8"
+    nhs-dark-green: "#006747"
+  foreground: nhs-black
+  background: white
+  primary: nhs-blue
+  danger: pink
+typography:
+  headings:
+    color: nhs-blue
+  link:
+    color: nhs-dark-green
+
+logo:
+  images:
+    quarto-logo:
+      path: "https://raw.githubusercontent.com/nhs-r-community/assets/main/logo/nhsr-logo.svg"
+      alt: "NHS-R Community"
+  small: quarto-logo

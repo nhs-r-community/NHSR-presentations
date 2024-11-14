@@ -44,7 +44,7 @@ because I didn't know what things were called!
 
 And whilst I was keeping notes on code there was all the other context and methodology information
 
-![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2c3OHAzOW9scjJ2bzdscGN4bDY5eGJ2MXZzNDI0YTBqbDVzemtxZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XIqCQx02E1U9W/giphy.gif){fig-alt="Kermit the frog frantically typing on a typewriter" width="656"}
+![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2c3OHAzOW9scjJ2bzdscGN4bDY5eGJ2MXZzNDI0YTBqbDVzemtxZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XIqCQx02E1U9W/giphy.gif){fig-alt="Kermit the frog frantically typing on a typewriter" fig-align="center" width="724" height="389"}
 
 . . .
 
@@ -85,7 +85,7 @@ I ended up with a book
 
 ## Actually I ended up with several books
 
-[![NHS-R Community Quarto website book page](img/screenshot-website-books.PNG)](https://nhsrcommunity.nhsrcommunity.com/books/)
+[![NHS-R Community Quarto website book page](img/screenshot-website-books.PNG){fig-align="center"}](https://nhsrcommunity.nhsrcommunity.com/books/)
 
 ::: notes
 This link is in development and so won't repeat nhsrcommunity once published.
@@ -93,7 +93,7 @@ This link is in development and so won't repeat nhsrcommunity once published.
 
 ## And there is more
 
-![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW5xZjVkMTNkaTczbmx5M2lodDh5NjF3aGhsN2xhcDBjNmhqZHlkciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nthoYgQ91Up2u7qmcE/giphy.gif){fig-alt="Cartoon of nesting dolls that open up until the smallest and then return back to the largest" width="632"}
+![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW5xZjVkMTNkaTczbmx5M2lodDh5NjF3aGhsN2xhcDBjNmhqZHlkciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nthoYgQ91Up2u7qmcE/giphy.gif){fig-alt="Cartoon of nesting dolls that open up until the smallest and then return back to the largest" fig-align="center" height="389"}
 
 ## Quarto solutions
 
@@ -107,7 +107,10 @@ Which lead to data science solutions like GitHub actions and Docker
 
 And many, many mistakes (also known as trial and error!)
 
-![](img/gh-action-shame.PNG){fig-alt="Screenshot of the 25 failed GitHub Action commits I made to trying to get a book to publish using the CNAME redirect to NHSR Community dot com" width="835"}
+:::{.fragment}
+![](img/gh-action-shame.PNG){fig-alt="Screenshot of the 25 failed GitHub Action commits I made to trying to get a book to publish using the CNAME redirect to NHSR Community dot com" fig-align="center"}
+
+:::
 
 ## Thanks
 
