@@ -1,0 +1,27 @@
+## {.center background-image="first-slide.png" background-size="contain" }
+
+::: {.notes}
+This slide is a holding slide or first image which says Welcome and has the community logos, conference sponsors and the hex sticker images for the conference and unconference.
+:::
+
+## All attendees {.center background-image="line-hex-background.png" background-size="contain" .smaller}
+
+- Please note the timing and return promptly after breaks!
+- Our Slack and social media links are in our postcard
+  - <https://postcard.nhsrcommunity.com>
+- We want your questions - using Slack! 
+- The NHS-R Community code of conduct applies to all events
+  - <https://nhsrway.nhsrcommunity.com/code-of-conduct.html>
+- Unconference is not streamed or recorded
+- All conference talks are streamed and recorded for sharing on YouTube
+
+## In person {.center background-image="line-hex-background.png" background-size="contain" .smaller}
+
+- The stand at the front has a QR code with the programme
+- Please make sure you've signed in
+- There are no planned fire tests today
+- Take a moment to locate the nearest exit
+- Switch phones to silent during sessions
+- WiFi username and password is **RPYSOC24**
+- Dietary specific food will be marked by large purple signs
+- Please be respectful with photographs if you take them

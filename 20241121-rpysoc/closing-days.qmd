@@ -1,0 +1,51 @@
+## {.center background-image="hex-background.png" background-size="contain"}
+
+::: {.absolute left="45%" top="55%" style="font-size:3em; padding: 0.5em 1em; background-color: rgba(255, 255, 255, .5);"}
+Closing
+
+:::
+
+## Thank you! {.center background-image="line-hex-background.png" background-size="contain" .smaller}
+
+- Presenters
+- Sponsors: 
+  - The Health Foundation  
+  - The Strategy Unit
+  - Jumping Rivers  
+  - Royal Statistical Society
+- University of Edinburgh for helping with the Unconference
+- The ICC staff and the Audio Visual support
+
+## Continued gratitude {.center background-image="line-hex-background.png" background-size="contain" .smaller}
+
+- To you whether you were in person or virtual
+- NHS-R Community Committee and NHS.pycom
+- Helpers on the day
+- Natasha for being our visual designer
+- Charlotte and Maciej for working behind the scenes
+- To Caileigh as we look forward to her return to NHS-R Community
+- And to Bianca who made this conference happen!
+
+## Final slide {.center background-image="line-hex-background.png" background-size="contain" .smaller}
+
+- We will send you a questionnaire to get feedback
+- Stay in touch and get involved!
+
+:::: {.columns}
+
+::: {.column width='60%'}
+> As we close, I encourage each of you to take the insights, connections, and 
+inspiration gained here back to your work, your teams, and your communities. 
+Let’s continue to innovate, collaborate, and make meaningful changes to 
+patient care.
+
+:::
+
+::: {.column width='40%'}
+:::
+
+::::
+
+## {.center background-image="line-hex-background.png" background-size="contain" .smaller}
+
+And now for the in-person raffle...
