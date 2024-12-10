@@ -1,0 +1,209 @@
+##  {.center .smaller background-image="lightning-slide.png" background-size="contain"}
+
+[**Zoë Turner**]{.absolute left="60%"}\
+[**Senior Data Scientist**]{.absolute left="60%"} </br>
+
+::: notes
+Hello I'm Zoë Turner and this is the final talk of the conference about a subject many of us hold dear - NHSR Community
+:::
+
+## How it started
+
+[![](https://www.countyasylums.co.uk/wp-content/uploads/2014/11/Untitled-11.jpg){fig-alt="Original sketch of Duncan Macmillan House then known as Mapperley Hospital, Nottingham,1878" fig-align="center" width="637"}](https://www.countyasylums.co.uk/mapperley-nottingham/)
+
+::: notes
+I started learning R the year that NHS-R Community started.
+
+Story: in 2018, analyst in Mental Health Trust.
+
+Only heard of R in passing - 3 people using it out of 11k self taught
+
+I didn't know where to start, where to get the software, what to do if I got it!
+
+I was sat physically away from the analytical team
+
+Needed to walk through 2 doors and a short corridor (old hospital)
+
+Feelings of nervousness asking a question.
+
+One question (can't remember what now) was when colleague said about NHS-R which I remember quite vividly.
+
+The rest, as they say, is history.
+:::
+
+## Not another talk about R
+
+::: incremental
+-   But about PSOC - Psychology of Sense of Community
+-   Sort of like RPySOC - R and Python Source Open Community
+:::
+
+![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDljbDA0dGRkdGI5MXUybjBpcHIyY2UycXplY2g2OGkyaDFjcTIwbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/14SBB8m1Gb4bDz7ANu/giphy-downsized-large.gif){fig-alt="David Schitt from Schitt's Creek saying I love making connections" fig-align="center"}
+
+::: notes
+This talk should be about R, it being an open analytics conference, but instead I'm going to talk about Community.
+:::
+
+## Scientific measuring of Community
+
+In a paper called **Sense of Community in Science Fiction Fandom** Professor of Psychology, Seymour Bernard Sarason was mentioned has having
+
+> ... noted that it necessarily implies a value judgment not compatible with hard science and yet he stated ***"you know when you have it and when you don't"***
+
+::: {style="font-size: 50%;"}
+Obst, Patricia L. and Zinkiewicz, Lucy and Smith, Sandy G. (2001)Sense of Community in Science Fiction Fandom, Part 1: Understanding sense of community in an international community of interest. Journal of Community Psychology 30(1):87-103. <https://eprints.qut.edu.au/601/4/601.pdf>
+:::
+
+::: notes
+Never thought I'd give much thought the discipline of community psychology
+
+but I've been giving a lot of thought to the Community part of NHS-R name for a long time.
+
+It was easy to say NHS was great,
+
+and that R was wonderful but
+
+what about the "feelings" of belonging I got from NHS-R Community?
+
+I've struggled to work out how we can prove the value
+
+Reassuringly a Professor of Psychology, Seymour Bernard Sarason presented the concept of PSOC...
+:::
+
+## Further research
+
+Two other authors McMillan and Chavis expanded on this in 1985 and revisited in 1996, to detail four specific but interconnected elements:
+
+::: incremental
+-   Membership \> Spirit
+-   Influence \> Trust
+-   Integration and Fulfilment of Needs \> Trade
+-   Shared Emotional Connection \> Art or collective memories
+:::
+
+::: notes
+-   valuing friendship and belonging over boundaries
+-   having community norms and the equal distribution of power
+-   maintain a positive sense of togetherness and the importance of similarity between members
+-   sharing of common experiences representing the community’s values and traditions
+:::
+
+## Key point
+
+> The authors suggest that ***the more people interact, the more likely they are to form close relationships***. The more positive this interaction, the stronger the bond developed.
+
+::: {style="font-size: 50%;"}
+Obst, Patricia L. and Zinkiewicz, Lucy and Smith, Sandy G. (2001) Sense of Community in Science Fiction Fandom, Part1: Understanding sense of community in an international community of interest. Journal of Community Psychology 30(1):87-103. <https://eprints.qut.edu.au/601/4/601.pdf>
+:::
+
+::: notes
+The emphasis is mine
+
+What interactions would these be?
+
+What works for something like a community - is it an event like this conference of something else?
+:::
+
+## Hmmm... questions
+
+![](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDN3MDA1eGhuZmoxY25jaWhsa2Npazg2ZHNmY2c2bzA2YmZwNTh2dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XHVmD4RyXgSjd8aUMb/giphy-downsized-large.gif){fig-alt="3 pug dogs looking quizzical moving their heads from side to side" fig-align="center"}
+
+::: notes
+Going back to the opening story.
+
+Even when I was reasonably comfortable in my role as an analyst I had questions about my work.
+
+I knew the code but not the data.
+
+People talk about the lack of water cooler chats we have if we work remotely but in person working can also be hard.
+
+Burden of feeling that "I should know this" "you've already told me" "I've forgotten" "I still don't understand".
+
+Every question would be an interaction.
+
+I'd get the answer or I'd learn something new like NHS-R Community existed
+:::
+
+## Shared goals
+
+We probably need a vision, an action plan, that type of thing.
+
+::: notes
+But PSOC research doesn't mention a shared purpose or common goals
+
+If we think about all the communities we belong to they often don't have precise purposes
+
+They have shared values, views or just participate in activities.
+
+A running club doesn't necessarily set out to get everyone to run, they enjoy running together.
+
+Communities though can be motivated to work together
+
+NHS-R Community could push for 3 things to action (spoiler: we already do these)
+:::
+
+## We need access to the right tools
+
+[![](https://cdn.pixabay.com/photo/2016/11/21/13/35/tools-1845426_1280.jpg){fig-alt="Photo of many tools like knives and spanners neatly piled together" fig-align="center" width="675"}](https://pixabay.com/photos/tools-knives-wrenches-drills-1845426/)
+
+::: notes
+People still struggle with access, still fighting, wrote Statement on Tools Extended to more than R
+:::
+
+## We need to share our code as standard
+
+[Government Service Manual](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable) says:
+
+> It is much easier to write your code in the open from the beginning of a project than it is to to open an existing repository later, because you can address security and other issues as you go along. If you do not do this, you will have to spend a **costly period of time at the end of the project** checking your code is all safe to be released.
+
+::: notes
+The Goldacre Review was published 2 years ago and publishing openly is not the default.
+
+Publishing code at the end if do use GitHub
+
+so much so that the release date will get pushed back until that date is "never".
+:::
+
+## We need to build capacity in the analytical workforce
+
+[![](https://cdn.pixabay.com/photo/2016/09/12/23/59/student-1666118_1280.jpg){fig-alt="Photo of the back of a school child with a backpack walking away into a building" fig-align="center" width="427"}](https://pixabay.com/photos/student-school-first-day-1666118/)
+
+::: notes
+Very little funding ever been available
+
+We volunteer for webinars and workshops and these make us better coders
+
+The power of sharing on YouTube - people catch up later, sometimes years later
+:::
+
+## Call to action {.center .smaller background-image="fellow-slide.png" background-size="contain"}
+
+::: incremental
+-   Get involved <https://nhsrcommunity.com/get-involved.html>
+-   Be recognised as a [Fellow](https://nhsrway.nhsrcommunity.com/nhsr-fellows.html)
+-   Ask questions
+:::
+
+::: notes
+These are big points but we can do them with small actions
+
+Get involved is not just code
+
+Reintroducing the Fellowship recognition through showing your public contributions (50 badges)
+
+And the final and most important action:
+
+Ask questions - even the simple ones, the ones you feel nervous about
+
+People love answering and sharing their knowledge and we have a community who want to help
+
+You'll be leading them as much as they are teaching you.
+:::
+
+## Thank you {.center .smaller background-image="fellow-slide.png" background-size="contain"}
+
+Special thanks to Natasha for the designs in these slides
+
+##  {.center .smaller background-image="line-hex-background.png" background-size="contain"}
+
+And now for the closing thanks for the conference...
