@@ -4,6 +4,8 @@ R and Python Open Source Conference (SOC) 2024 hosted by NHS-R Community and NHS
 
 The following slides were used for:
 
-- Introduction
-- Closing
-- Lightning talk
+- [Introduction](https://presentations.nhsrcommunity.com/20241121-rpysoc/intro-days.html#/section)
+- [Closing](https://presentations.nhsrcommunity.com/20241121-rpysoc/closing-days.html#/section)
+- [NHS-R Community lightning talk](https://presentations.nhsrcommunity.com/20241121-rpysoc/lightning-talk.qmd) - pressing `p`
+will bring up the presenter notes
+
